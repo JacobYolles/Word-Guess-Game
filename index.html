@@ -3,16 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Psychic Games</title>
+  <title>Word Guess Game</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
       <div id="psychicgame">
 
-        <h1><strong>The Psychic Game</strong></h1>
+        <h1><strong>Word Guess Game</strong></h1>
         <h8>You get 9 guesses to get the right answer!</h8>
-          <h2>Guess what letter I'm thinking of!<h2>
+        <div class="wordToGuess">
+            <p id="wordToGuess"> Word to Guess:
+                <span id="wordGuess"></span>
+            </p>
+        </div>
+          <h2>Guess what word I'm thinking of!<h2>
           <h3>Your Guess <span id="userguess"></span></h3>
           <h4>Total Wins <span id="wins"></span></h4>
           <h5>Total Losses <span id="losses"></span></h5>
@@ -21,8 +26,11 @@
       </div>
 
 
-<script src="assets/javascript/game.js"></script>
+
       
+<script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
     </body>
 
     </html>
